@@ -7,76 +7,208 @@ export default function Home() {
                 <h1>93Moove</h1>
 
 
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                    <p>Les prix :</p>
-
-                    <div className="bg-gray-700 px-4 py-16 min-h-screen">
-                        <div aria-hidden="true"
-                             className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20">
-                            <div className="blur-[106px] h-56 bg-gradient-to-br to-purple-400 from-blue-700"></div>
-                            <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-indigo-600"></div>
+                <div id="pricing" className="py-20 md:px-20 lg:px-20">
+                    <div className="container mx-auto px-4">
+                        <div className="mb-12 text-center">
+                            <h3 className="text-purple-400" data-aos="fade-down">Pricing Plans</h3>
+                            <h2 className="text-white text-[30px] font-bold" data-aos="fade-down">
+                                Choose Your Perfect Package
+                            </h2>
+                            <p className="mx-auto mt-4 max-w-2xl text-gray-400" data-aos="fade-down">
+                                choisissez bien en fonction de votre budget
+                            </p>
                         </div>
-                        <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-                            <div className="mb-10 space-y-4 px-6 md:px-0">
-                                <h2 className="text-center text-2xl font-bold text-white sm:text-3xl md:text-4xl">Pricing</h2>
+
+                        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                            <div className="relative bg-[#FFFFFF] border-gray-800 p-6 rounded-xl">
+                                <div className="text-center">
+                                    <h3 className="text-2xl font-bold text-white">
+                                        Basic Package
+                                    </h3>
+                                    <div className="mt-4 text-center">
+            <span className="text-4xl text-violet-400 font-bold">
+              &#8377;499
+            </span>
+                                        <span className="text-gray-400">/session</span>
+                                    </div>
+                                </div>
+                                <div className="mt-6">
+                                    <ul className="mb-8 space-y-4">
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">2 Hour Photo Session</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">50 Digital Images</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Online Gallery</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Basic Editing</span>
+                                        </li>
+                                    </ul>
+                                    <span
+                                        className="cursor-pointer w-full py-3 px-6 text-center text-white font-semibold rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                    >
+            Choose Plan
+          </span>
+                                </div>
                             </div>
-                            <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+                            <div
+                                className="relative bg-violet-900/20 backdrop-blur-lg rounded-2xl border-2 border-violet-500 hover:transform hover:-translate-y-2 transition-all duration-300">
                                 <div
-                                    className="flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md">
-                                    <h2 className="text-lg sm:text-xl font-medium text-white mb-2">Starter</h2>
-                                    <p className="text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400">
-                                        <span className="text-3xl sm:text-4xl font-bold text-white">$19</span> / Month
-                                    </p>
-                                    <ul className="list-none list-inside mb-6 text-center text-gray-300">
-                                        <li className="font-bold text-orange-600">1 Website</li>
-                                        <li>Custom Domain</li>
-                                        <li>Basic SEO</li>
-                                        <li>Limited Support</li>
-                                    </ul>
-                                    <a target="_blank" rel="noopener noreferrer"
-                                       className="lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-                                       href="https://example.com/starter-plan"><span
-                                        className="relative text-sm font-semibold text-black">Get Started</span></a>
+                                    className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-purple-600 px-3 py-1 text-white text-sm font-semibold">
+                                    Most Popular
                                 </div>
-                                <div
-                                    className="flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md">
-                                    <h2 className="text-lg sm:text-xl font-medium text-white mb-2">Pro</h2>
-                                    <p className="text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400">
-                                        <span className="text-3xl sm:text-4xl font-bold text-white">$49</span> / Month
-                                    </p>
-                                    <ul className="list-none list-inside mb-6 text-center text-gray-300">
-                                        <li className="font-bold text-orange-599">3 Websites</li>
-                                        <li>Custom Domain &amp; Subdomain</li>
-                                        <li>Advanced SEO</li>
-                                        <li>24/7 Support</li>
-                                    </ul>
-                                    <a target="_blank" rel="noopener noreferrer"
-                                       className="lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-                                       href="https://example.com/pro-plan"><span
-                                        className="relative text-sm font-semibold text-black">Get Started</span></a>
+                                <div className="text-center p-6">
+                                    <h3 className="text-2xl font-bold text-white">
+                                        Premium Package
+                                    </h3>
+                                    <div className="mt-4 text-center">
+            <span className="text-4xl text-violet-400 font-bold">
+              &#8377;899
+            </span>
+                                        <span className="text-gray-400">/session</span>
+                                    </div>
                                 </div>
-                                <div
-                                    className="flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md">
-                                    <h2 className="text-lg sm:text-xl font-medium text-white mb-2">Business</h2>
-                                    <p className="text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400">
-                                        <span className="text-3xl sm:text-4xl font-bold text-white">$99</span> / Month
-                                    </p>
-                                    <ul className="list-none list-inside mb-6 text-center text-gray-300">
-                                        <li className="font-bold text-orange-600">Unlimited Websites</li>
-                                        <li>Custom Domain &amp; Subdomain</li>
-                                        <li>Enterprise SEO</li>
-                                        <li>Premium Support</li>
+                                <div className="px-4 pb-8">
+                                    <ul className="mb-8 space-y-4">
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">4 Hour Photo Session</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">100 Digital Images</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Online Gallery</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Advanced Editing</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Print Release</span>
+                                        </li>
                                     </ul>
-                                    <a target="_blank" rel="noopener noreferrer"
-                                       className="lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-                                       href   ="https://example.com/business-plan"><span
-                                        className="relative text-sm font-semibold text-black">Get Started</span></a>
+                                    <span
+                                        className="cursor-pointer w-full py-3 px-6 text-center text-white font-semibold rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                    >
+            Choose Plan
+          </span>
                                 </div>
                             </div>
+
+                            <div className="relative bg-[#1A1A1A] border-gray-800 p-6 rounded-xl">
+                                <div className="text-center">
+                                    <h3 className="text-2xl font-bold text-white">
+                                        Professional Package
+                                    </h3>
+                                    <div className="mt-4 text-center">
+            <span className="text-3xl text-violet-400 font-bold">
+              &#8377;1499
+            </span>
+                                        <span className="text-gray-400">/session</span>
+                                    </div>
+                                </div>
+                                <div className="mt-6">
+                                    <ul className="mb-8 space-y-4">
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Full Day Coverage</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Unlimited Images</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Premium Online Gallery</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Premium Editing</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Photo Album</span>
+                                        </li>
+                                    </ul>
+                                    <span
+                                        className="cursor-pointer w-full py-3 px-6 text-center text-white font-semibold rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                    >
+            Choose Plan
+          </span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-
                 </div>
                 < Image
                     aria-hidden
