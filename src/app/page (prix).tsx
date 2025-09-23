@@ -45,7 +45,7 @@ export default function Home() {
                                   <span className="text-3xl sm:text-4xl font-bold text-white">$49</span> / Month
                               </p>
                               <ul className="list-none list-inside mb-6 text-center text-gray-300">
-                                  <li className="font-bold text-orange-600">3 Websites</li>
+                                  <li className="font-bold text-orange-599">3 Websites</li>
                                   <li>Custom Domain &amp; Subdomain</li>
                                   <li>Advanced SEO</li>
                                   <li>24/7 Support</li>
