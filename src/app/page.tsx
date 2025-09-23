@@ -13,7 +13,6 @@ export default function Home() {
 
 
 
-
         </div>
           < Image
           aria-hidden
