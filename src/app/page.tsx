@@ -8,7 +8,7 @@ export default function Home() {
 
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-            <p>Bienvenue sur un site qui vous accueille à bras ouverts et vous propose de faire une activité physique régulière ou occasionel
+            <p>Bienvenue a toutes et a tous sur notre siteu qui vous accueille à bras ouverts et vous propose de faire une activité physique régulière ou occasionel
                 vous pourrez vous inscrire sur notre site ou notre application à des cours et vous pourrez choisir parmi notre large catalogue d'activités.</p>
 
 
