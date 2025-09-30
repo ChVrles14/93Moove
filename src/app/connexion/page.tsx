@@ -9,15 +9,14 @@ export default function Home() {
                         width={50}
                         src="/Logo.png"
                         height={50}
-                        className="flex items-center"
-                    />
+                        className="flex items-center" alt={""}                    />
 
 
                 </header>
 
                 <form>
                     <div>
-                        <label className="block mb-2 text-indigo-500" htmlFor="username">Nom d'Utilisateur</label>
+                        <label className="block mb-2 text-indigo-500" htmlFor="username">Nom utilisation</label>
                         <input
                             className="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-300"
                             type="text" name="username" placeholder="écrivez votre nom d'utilisateur?"/>
