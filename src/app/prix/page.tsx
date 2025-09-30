@@ -48,7 +48,7 @@ export default function Home() {
                                                  fill="currentColor" aria-hidden="true">
                                                 <path d="M9 12l2 2 4-4"></path>
                                             </svg>
-                                            <span className="text-orange-500">Vous serez accompagné par nos animateurs expérimentés </span>
+                                            <span className="text-orange-500">Vous serez accompagné par nos animateur.es expérimentés </span>
                                         </li>
                                     </ul>
                                     <span
