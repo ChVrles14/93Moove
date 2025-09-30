@@ -4,88 +4,176 @@ export default function Home() {
     return (
         <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
             <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-                <h1>93Moove</h1>
 
 
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                    <p>Les prix :</p>
-
-                    <div className="bg-gray-700 px-4 py-16 min-h-screen">
-                        <div aria-hidden="true"
-                             className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20">
-                            <div className="blur-[106px] h-56 bg-gradient-to-br to-purple-400 from-blue-700"></div>
-                            <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-indigo-600"></div>
+                <div id="pricing" className="py-20 md:px-20 lg:px-20">
+                    <div className="container mx-auto px-4">
+                        <div className="mb-12 text-center">
+                            <h3 className="text-white-400" data-aos="fade-down">Les prix</h3>
+                            <h2 className="text-white text-[30px] font-bold" data-aos="fade-down">
+                                Choisissez votre plan préféré
+                            </h2>
+                            <p className="mx-auto mt-4 max-w-2xl text-white-400" data-aos="fade-down">
+                             en fonction de votre budget
+                            </p>
                         </div>
-                        <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-                            <div className="mb-10 space-y-4 px-6 md:px-0">
-                                <h2 className="text-center text-2xl font-bold text-white sm:text-3xl md:text-4xl">Pricing</h2>
-                            </div>
-                            <div className="flex flex-col sm:flex-row justify-center gap-4">
-                                <div
-                                    className="flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md">
-                                    <h2 className="text-lg sm:text-xl font-medium text-white mb-2">Starter</h2>
-                                    <p className="text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400">
-                                        <span className="text-3xl sm:text-4xl font-bold text-white">$19</span> / Month
-                                    </p>
-                                    <ul className="list-none list-inside mb-6 text-center text-gray-300">
-                                        <li className="font-bold text-orange-600">1 Website</li>
-                                        <li>Custom Domain</li>
-                                        <li>Basic SEO</li>
-                                        <li>Limited Support</li>
-                                    </ul>
-                                    <a target="_blank" rel="noopener noreferrer"
-                                       className="lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-                                       href="https://example.com/starter-plan"><span
-                                        className="relative text-sm font-semibold text-black">Get Started</span></a>
+
+                        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                            <div className="relative bg-[#FFFFFF] border-gray-800 p-6 rounded-xl">
+                                <div className="text-center">
+                                    <h3 className="text-2xl font-bold text-orange-500">
+                                        Le pack basique
+                                    </h3>
+                                    <div className="mt-4 text-center">
+            <span className="text-4xl text-orange-500 font-bold">
+              5€
+            </span>
+                                        <span className="text-orange-500">/session</span>
+                                    </div>
                                 </div>
-                                <div
-                                    className="flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md">
-                                    <h2 className="text-lg sm:text-xl font-medium text-white mb-2">Pro</h2>
-                                    <p className="text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400">
-                                        <span className="text-3xl sm:text-4xl font-bold text-white">$49</span> / Month
-                                    </p>
-                                    <ul className="list-none list-inside mb-6 text-center text-gray-300">
-                                        <li className="font-bold text-orange-599">3 Websites</li>
-                                        <li>Custom Domain &amp; Subdomain</li>
-                                        <li>Advanced SEO</li>
-                                        <li>24/7 Support</li>
+                                <div className="mt-6">
+                                    <ul className="mb-8 space-y-4">
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-orange-500">2H du sport de votre choix</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-orange-500">Vous serez accompagné par nos animateur.es expérimentés </span>
+                                        </li>
                                     </ul>
-                                    <a target="_blank" rel="noopener noreferrer"
-                                       className="lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-                                       href="https://example.com/pro-plan"><span
-                                        className="relative text-sm font-semibold text-black">Get Started</span></a>
-                                </div>
-                                <div
-                                    className="flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md">
-                                    <h2 className="text-lg sm:text-xl font-medium text-white mb-2">Business</h2>
-                                    <p className="text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400">
-                                        <span className="text-3xl sm:text-4xl font-bold text-white">$99</span> / Month
-                                    </p>
-                                    <ul className="list-none list-inside mb-6 text-center text-gray-300">
-                                        <li className="font-bold text-orange-600">Unlimited Websites</li>
-                                        <li>Custom Domain &amp; Subdomain</li>
-                                        <li>Enterprise SEO</li>
-                                        <li>Premium Support</li>
-                                    </ul>
-                                    <a target="_blank" rel="noopener noreferrer"
-                                       className="lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-                                       href   ="https://example.com/business-plan"><span
-                                        className="relative text-sm font-semibold text-black">Get Started</span></a>
+                                    <span
+                                        className="cursor-pointer w-full py-3 px-6 text-center text-white font-semibold rounded-full bg-gradient-to-r from-orange-500 to-orange-700 shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                    >
+            Choisir le plan
+          </span>
                                 </div>
                             </div>
+
+                            <div
+                                className="relative bg-violet-900/20 backdrop-blur-lg rounded-2xl border-2 border-orange-50 hover:transform hover:-translate-y-2 transition-all duration-300">
+                                <div
+                                    className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-orange-600 px-3 py-1 text-white text-sm font-semibold">
+                                    Most Popular
+                                </div>
+                                <div className="text-center p-6">
+                                    <h3 className="text-2xl font-bold text-white">
+                                        Le pack Premium
+                                    </h3>
+                                    <div className="mt-4 text-center">
+            <span className="text-4xl text-orange-400-400 font-bold">
+              15€
+            </span>
+                                        <span className="text-white">/session</span>
+                                    </div>
+                                </div>
+                                <div className="px-4 pb-8">
+                                    <ul className="mb-8 space-y-4">
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">4H - 2 sports au choix dans une meme session</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Accompagnement personnalisé par nos animateurs</span>
+                                        </li>
+
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Inscription en ligne</span>
+                                        </li>
+                                    </ul>
+                                    <span
+                                        className="cursor-pointer w-full py-3 px-6 text-center text-white font-semibold rounded-full bg-gradient-to-r from-orange-500 to-orange-600 shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                    >
+            Choisir le plan
+          </span>
+                                </div>
+                            </div>
+
+                            <div className="relative bg-[#1A1A1A] border-gray-800 p-6 rounded-xl">
+                                <div className="text-center">
+                                    <h3 className="text-2xl font-bold text-white">
+                                        Pour le passionné
+                                    </h3>
+                                    <div className="mt-4 text-center">
+                                        <span className="text-2xl text-white font-bold line-through">120€
+            </span>
+                                        &nbsp;&nbsp;
+            <span className="text-3xl text-orange-400 font-bold">
+              60€
+            </span>
+                                        <span className="text-gray-400">/mois</span>
+                                    </div>
+                                </div>
+                                <div className="mt-6">
+                                    <ul className="mb-8 space-y-4">
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Sessions illimité au sport de votre choix</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Accompagnement personnalisé par nos animateurs</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Inscription en ligne</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <svg className="mr-2 h-5 w-5 text-purple-400"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                 fill="currentColor" aria-hidden="true">
+                                                <path d="M9 12l2 2 4-4"></path>
+                                            </svg>
+                                            <span className="text-white">Boissons gratuites</span>
+                                        </li>
+                                    </ul>
+                                    <span
+                                        className="cursor-pointer w-full py-3 px-6 text-center text-white font-semibold rounded-full bg-gradient-to-r from-orange-500 to-orange-600 shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 ease-in-out transform hover:scale-105"
+                                    >
+            Choisir le plan
+          </span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-
                 </div>
-                < Image
-                    aria-hidden
-                    src="/Sport.png"
-                    alt="logo"
-                    width={500}
-                    height={500}
-                    border-radius={500}
-                />
+
             </main>
         </div>
     );
