@@ -73,7 +73,7 @@ export default function Home() {
 
                       <div
                           className="relative group bg-[#1c1c1c] rounded-4xl overflow-hidden shadow hover:shadow-lg transition">
-                          <img src="basket.png" alt="basket"
+                          <img src="basket.png" alt="basketball"
                                className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300"/>
                           <div
                               className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
