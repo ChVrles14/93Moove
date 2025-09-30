@@ -85,7 +85,6 @@ export default function Home() {
                     width={500}
                     height={500}
                     border-radius={500}
-                    className="justify-center"
                 />
             </main>
         </div>
