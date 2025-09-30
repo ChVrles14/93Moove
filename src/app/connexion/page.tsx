@@ -31,7 +31,7 @@ export default function Home() {
 
                     <div>
                         <a
-                            href="/pagedeconnexion"
+                            href="/registration"
                             className="text-white bg-indigo-600 py-1.5 px-4 rounded w-full block text-center"
                         >
                             Se connecter
@@ -45,7 +45,7 @@ export default function Home() {
                 <footer>
                     <a className="text-indigo-700 hover:text-pink-700 text-sm float-left" href="#">Mot de passe oublié?</a>
 
-                    <a     href="/creeruncompte"
+                    <a     href="/registration"
                            className="text-indigo-700 hover:text-pink-700 text-sm float-right" >Créer un compte
                     </a>
                 </footer>
