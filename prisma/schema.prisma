@@ -19,6 +19,7 @@ model Utilisateurs {
   email    String
   number   Int
   password String
+  echelon  Int
 }
 
 model Animateurs {
@@ -26,4 +27,26 @@ model Animateurs {
   nom    String
   prenom String
   age    Int
+}
+
+model Administration {
+  id     Int    @id @default(autoincrement())
+  nom    String
+  prenom String
+  age    Int
+}
+
+model Activite {
+  id   Int      @id @default(autoincrement())
+  nom  String
+  date DateTime
+}
+
+model Professeures {
+  id     Int    @id @default(autoincrement())
+  nom    String
+  prenom String
+  age    Int
+  salle  String
+  cours  String
 }
