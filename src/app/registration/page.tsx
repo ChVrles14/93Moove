@@ -43,6 +43,16 @@ export default function Home() {
                         </div>
 
                         <div className="mt-6">
+                            <label htmlFor="name"
+                                   className="block text-sm font-medium leading-5  text-gray-700">Date de naissance</label>
+                            <div className="mt-1 relative rounded-md shadow-sm">
+                                <input type="datetime-local" id="date" name="date" required
+                                       className="appearance-none block w-full px-3 py-2 border text-gray-700 border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
+
+                            </div>
+                        </div>
+
+                        <div className="mt-6">
                             <label htmlFor="email" className="block text-sm font-medium leading-5 text-gray-700">
                                 Adresse E-mail
                             </label>

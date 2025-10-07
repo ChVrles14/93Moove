@@ -11,6 +11,13 @@ datasource db {
   url      = "file:app.db"
 }
 
+model Utilisateurs {
+  id     Int    @id @default(autoincrement())
+  nom    String
+  prenom String
+  age    Int
+}
+
 model Animateurs {
   id     Int    @id @default(autoincrement())
   nom    String
