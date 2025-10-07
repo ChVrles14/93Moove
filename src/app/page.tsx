@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PrismaClient } from "@/generated/prisma"
+const prisma = new PrismaClient();
 
 
-export default function Home() {
+export default async function Home() {
+    const Activite = await prisma.activite.findMany();
   return (
       <div
           className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
@@ -27,9 +30,11 @@ export default function Home() {
               />
               <section>
                   <h2 className="text-2xl font-bold mb-6 border-l-4 border-white pl-3">Les activités vedettes</h2>
+                  <ul>
+                  {Activite.map((a) => (
 
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-
+                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <li key={a.id}>
                       <div
                           className="relative group bg-[#1c1c1c] rounded-4xl overflow-hidden shadow hover:shadow-lg transition">
                           <img src="Handball.png" alt="Handball"
@@ -40,10 +45,10 @@ export default function Home() {
                               </button>
                           </div>
                           <div className="p-2">
-                              <h3 className="text-sm font-semibold truncate">Handball</h3>
+                              <h3 className="text-sm font-semibold truncate">{a.nom}</h3>
                           </div>
                       </div>
-
+    </li>
                       <div
                           className="relative group bg-[#1c1c1c] rounded-4xl overflow-hidden shadow hover:shadow-lg transition">
                           <img src="foot.png" alt="foot"
@@ -114,11 +119,13 @@ export default function Home() {
                           </div>
                       </div>
 
-                  </div>
-              </section>
-          </main>
+                          )};
+                  </ul>
+                    </section>
+                      </main>
+                      </div>
 
-      </div>
+
 
 
   );
