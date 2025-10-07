@@ -37,9 +37,8 @@ model Administration {
 }
 
 model Activite {
-  id   Int      @id @default(autoincrement())
-  nom  String
-  date DateTime
+  id  Int    @id @default(autoincrement())
+  nom String
 }
 
 model Professeures {
