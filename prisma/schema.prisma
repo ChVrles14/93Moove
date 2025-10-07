@@ -12,10 +12,13 @@ datasource db {
 }
 
 model Utilisateurs {
-  id     Int    @id @default(autoincrement())
-  nom    String
-  prenom String
-  age    Int
+  id       Int    @id @default(autoincrement())
+  nom      String
+  prenom   String
+  age      Int
+  email    String
+  number   Int
+  password String
 }
 
 model Animateurs {
