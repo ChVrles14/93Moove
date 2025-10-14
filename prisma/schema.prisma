@@ -37,8 +37,9 @@ model Administration {
 }
 
 model Activite {
-  id  Int    @id @default(autoincrement())
-  nom String
+  id    Int    @id @default(autoincrement())
+  nom   String
+  photo String @default("foot.png")
 }
 
 model Professeures {
