@@ -17,7 +17,7 @@ export default async function Home() {
                   <p>Bienvenue a toutes et a tous sur notre site qui vous accueille à bras ouverts et vous propose de
                       faire une activité physique régulière ou occasionel
                       vous pourrez vous inscrire sur notre site ou notre application à des cours et vous pourrez choisir
-                      parmi notre large catalogue d&#39;activités.</p>
+                      parmi notre large catalogue d&#39;activites.</p>
 
               </div>
               < Image
