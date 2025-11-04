@@ -19,49 +19,45 @@ export default function Home() {
             </div>
 
             <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-                <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+                <div className=" py-8 px-4 shadow sm:rounded-lg sm:px-10">
                     <form method="POST" action="#">
-                        <div>
-                            <label htmlFor="name"
-                                   className="block text-sm font-medium leading-5  text-gray-700">Nom</label>
-                            <div className="mt-1 relative rounded-md shadow-sm">
-                                <input id="name" name="name" placeholder="Doe" type="text"
-                                       className="appearance-none block w-full px-3 py-2 border text-gray-700 border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
 
-                            </div>
+                        <div className="relative z-0 w-full mb-5 group">
+                            <input type="name" name="floating_name" id="floating_name"
+                                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                   placeholder=" " required/>
+                            <label htmlFor="floating_name"
+                                   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                Nom </label>
                         </div>
 
-                        <div className="mt-6">
-                            <label htmlFor="name"
-                                   className="block text-sm font-medium leading-5  text-gray-700">Prénom</label>
-                            <div className="mt-1 relative rounded-md shadow-sm">
-                                <input id="name" name="name" placeholder="John" type="text"
-                                       className="appearance-none block w-full px-3 py-2 border text-gray-700 border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
-
-                            </div>
+                        <div className="relative z-0 w-full mb-5 group">
+                            <input type="name" name="floating_name" id="floating_name"
+                                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                   placeholder=" " required/>
+                            <label htmlFor="floating_name"
+                                   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                               Prénom </label>
                         </div>
 
-                        <div className="mt-6">
-                            <label htmlFor="name"
-                                   className="block text-sm font-medium leading-5  text-gray-700">Date de naissance</label>
-                            <div className="mt-1 relative rounded-md shadow-sm">
-                                <input type="date" id="date" name="date" required
-                                       className="appearance-none block w-full px-3 py-2 border text-gray-700 border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
-
-                            </div>
+                        <div className="relative z-0 w-full mb-5 group">
+                            <input type="date" name="date" id="date"
+                                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                   placeholder=" " required/>
+                            <label htmlFor="floating_name"
+                                   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                Date de naissance </label>
                         </div>
 
-
-                        <div className="mt-6">
-                            <label htmlFor="email" className="block text-sm font-medium leading-5 text-gray-700">
-                                Adresse E-mail
-                            </label>
-                            <div className="mt-1 relative rounded-md shadow-sm">
-                                <input id="email" name="email" placeholder="user@gmail.com" type="email"
-                                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition text-gray-700 duration-150 ease-in-out sm:text-sm sm:leading-5"/>
-
-                            </div>
+                        <div className="relative z-0 w-full mb-5 group">
+                            <input type="email" name="email" id="email"
+                                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                   placeholder=" " required/>
+                            <label htmlFor="email"
+                                   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                Adresse Email </label>
                         </div>
+
 
                         <div className="bg-white p-4 rounded-lg max-w-[350px]">
                             <label className="text-gray-600 text-sm">
