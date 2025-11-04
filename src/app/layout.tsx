@@ -29,23 +29,30 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
     <header className="flex mx-auto justify-between items-center max-w-[1300px] py-4 ">
-        <div className="flex items-center gap-3">
+        <Link href="/"><div className="flex items-center gap-3">
             <img src="/logoo.png" alt="logo" width={140} height={140} />
         </div>
+        </Link>
         <nav className="hidden sm:inline-block">
             <ul className="flex gap-3 md:gap-5 lg:gap-10">
                 <li className="uppercase font-bold text-xs text-white"><Link href="#">A PROPOS</Link></li>
-                <li className="uppercase font-bold text-xs text-white"><Link href="#">PRIX</Link></li>
+                <li className="uppercase font-bold text-xs text-white"><Link href="/prix">PRIX</Link></li>
                 <li className="uppercase font-bold text-xs text-white"><Link href="#">ACTIVITÉS</Link></li>
             </ul>
         </nav>
         <div className="hidden sm:flex gap-3 md:gap-5 lg:gap-9">
+            <Link href="/registration">
             <button
-                className="uppercase font-bold text-xs text-white border-2 border-white rounded-[40px] py-1 px-3  md:py-2 lg:py-4 md:px-4 lg:px-9 "> INSCRIPTION
+                className="uppercase cursor-pointer font-bold text-xs text-white border-2 border-white rounded-[40px] py-1 px-3  md:py-2 lg:py-4 md:px-4 lg:px-9 ">
+                INSCRIPTION
             </button>
+            </Link>
+            <Link href="/connexion">
             <button
-                className="uppercase font-bold text-xs rounded-[40px] py-1 px-3 md:py-2 lg:py-4 md:px-4 lg:px-9 text-[#302c42]  bg-gradient-to-r from-orange-400 to-orange-700 shadow-lg">CONNEXION
+                className="uppercase cursor-pointer font-bold text-xs rounded-[40px] py-1 px-3 md:py-2 lg:py-4 md:px-4 lg:px-9 text-[#302c42]  bg-gradient-to-r from-orange-400 to-orange-700 shadow-lg">
+                CONNEXION
             </button>
+            </Link>
         </div>
         <button className="sm:hidden inline-block">
             <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">

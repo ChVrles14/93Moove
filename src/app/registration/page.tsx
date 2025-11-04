@@ -2,16 +2,17 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-orange-500 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+        <body>
+        <div className="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-md">
-                <h2 className="mt-15 text-center text-3xl leading-9 font-extrabold text-gray-900">
+                <h2 className="mt-15 text-center text-3xl leading-9 font-extrabold text-orange-500">
                     Créer un nouveaux Compte
                 </h2>
                 <p className="mt-2 text-center text-sm leading-5 max-w">
 
                     <a href="/connexion"
                        className="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150">
-                        Ou connectez-vous
+                        <u>Ou connectez-vous</u>
 
                     </a>
                 </p>
@@ -116,5 +117,6 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        </body>
     );
 }
