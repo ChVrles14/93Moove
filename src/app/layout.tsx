@@ -50,7 +50,7 @@ export default function RootLayout({
             <Link href="/connexion">
             <button
                 className="uppercase cursor-pointer font-bold text-xs rounded-[40px] py-1 px-3 md:py-2 lg:py-4 md:px-4 lg:px-9 text-[#302c42]  bg-gradient-to-r from-orange-400 to-orange-700 shadow-lg">
-                CONNEXIO
+                CONNEXION
             </button>
             </Link>
         </div>
