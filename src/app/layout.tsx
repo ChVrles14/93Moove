@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,25 +30,21 @@ export default function RootLayout({
     >
     <header className="flex mx-auto justify-between items-center max-w-[1300px] py-4 ">
         <div className="flex items-center gap-3">
-            <img src="logow.png" alt="93Moove" width={90} height={90}/>
-
+            <img src="/logoo.png" alt="logo" width={140} height={140} />
         </div>
         <nav className="hidden sm:inline-block">
             <ul className="flex gap-3 md:gap-5 lg:gap-10">
-                <li className="uppercase font-bold text-xs text-white"><a href="#">ABOUT</a></li>
-                <li className="uppercase font-bold text-xs text-white"><a href="#">SERVICES</a></li>
-                <li className="uppercase font-bold text-xs text-white"><a href="#">TECHNOLOGIES</a></li>
-                <li className="uppercase font-bold text-xs text-white"><a href="#">HOW TO</a></li>
+                <li className="uppercase font-bold text-xs text-white"><Link href="#">A PROPOS</Link></li>
+                <li className="uppercase font-bold text-xs text-white"><Link href="#">PRIX</Link></li>
+                <li className="uppercase font-bold text-xs text-white"><Link href="#">ACTIVITÉS</Link></li>
             </ul>
         </nav>
         <div className="hidden sm:flex gap-3 md:gap-5 lg:gap-9">
             <button
-                className="uppercase font-bold text-xs text-white border-2 border-white rounded-[40px] py-1 px-3  md:py-2 lg:py-4 md:px-4 lg:px-9 ">
-                Inscription
+                className="uppercase font-bold text-xs text-white border-2 border-white rounded-[40px] py-1 px-3  md:py-2 lg:py-4 md:px-4 lg:px-9 "> INSCRIPTION
             </button>
             <button
-                className="uppercase font-bold text-xs rounded-[40px] py-1 px-3 md:py-2 lg:py-4 md:px-4 lg:px-9 text-[#302c42]  bg-gradient-to-r from-[#8176AF] to-[#C0B7E8]">
-                Connexion
+                className="uppercase font-bold text-xs rounded-[40px] py-1 px-3 md:py-2 lg:py-4 md:px-4 lg:px-9 text-[#302c42]  bg-gradient-to-r from-orange-400 to-orange-700 shadow-lg">CONNEXION
             </button>
         </div>
         <button className="sm:hidden inline-block">
@@ -83,7 +79,7 @@ export default function RootLayout({
             <h2 className="font-bold text-3xl xl:text-4xl leading-snug">
                 Commencez maintenant.
             </h2>
-            <a className="mt-8 xl:mt-12 px-12 py-5 text-lg font-medium leading-tight inline-block bg-orange-400 rounded-full shadow-xl border border-transparent hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-sky-999 focus:ring-sky-500"
+            <a className="mt-8 xl:mt-12 px-12 py-5 text-lg font-medium leading-tight inline-block bg-black rounded-full shadow-xl border border-transparent hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-sky-999 focus:ring-sky-500"
                href="#">S'inscire</a>
             <div className="mt-14 xl:mt-20">
                 <nav className="flex flex-wrap justify-center text-lg font-medium">
@@ -92,7 +88,7 @@ export default function RootLayout({
                     <div className="px-5 py-2"><a href="#">Terms</a></div>
                     <div className="px-5 py-2"><a href="#">Twitter</a></div>
                 </nav>
-                <p className="mt-7 text-base">&copy; Organisme du lycée Auguste blanqui</p>
+                <p className="mt-7 text-base">Organisme du lycée Auguste blanqui</p>
             </div>
         </div>
     </footer>
