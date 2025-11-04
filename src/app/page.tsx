@@ -8,8 +8,10 @@ export default async function Home() {
     const Activite = await prisma.activite.findMany();
   return (
       <div
-          className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+          className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 ">
           <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+
+             <div className="">
               <h1>93Moove</h1>
 
 
@@ -28,6 +30,8 @@ export default async function Home() {
                   height={500}
                   border-radius={500}
               />
+
+
               <section>
                   <h2 className="text-2xl font-bold mb-6 border-l-4 border-white pl-3">
                       Les activités vedettes
@@ -62,9 +66,9 @@ export default async function Home() {
               </section>
 
 
-
+             </div>
           </main>
-                      </div>
+      </div>
 
 
 
