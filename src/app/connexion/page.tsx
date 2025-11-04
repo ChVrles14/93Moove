@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="flex h-screen bg-orange-500">
+        <div className="flex h-screen">
             <div className="w-full max-w-xs m-auto bg-indigo-100 rounded p-5">
                 <header className="flex justify-center items-center h-20">
                     < Image
