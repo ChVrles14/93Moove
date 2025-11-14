@@ -95,7 +95,7 @@ export default function RootLayout({
                     <div className="px-5 py-2"><a href="#">Terms</a></div>
                     <div className="px-5 py-2"><a href="#">Twitter</a></div>
                 </nav>
-                <p className="mt-7 text-base">Organisme du lycée Auguste blanqui</p>
+                <p className="mt-7 text-base">Organism du lycée Auguste Blanqui</p>
             </div>
         </div>
     </footer>
